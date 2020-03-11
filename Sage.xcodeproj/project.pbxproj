@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A24D7E9924199DBA001AB4ED /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24D7E9824199DBA001AB4ED /* WelcomeView.swift */; };
+		A24D7E9B24199DF8001AB4ED /* WaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24D7E9A24199DF8001AB4ED /* WaterView.swift */; };
 		A25FF1302419910A0021DEA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FF12F2419910A0021DEA0 /* AppDelegate.swift */; };
 		A25FF1322419910A0021DEA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FF1312419910A0021DEA0 /* SceneDelegate.swift */; };
 		A25FF1352419910A0021DEA0 /* Sage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A25FF1332419910A0021DEA0 /* Sage.xcdatamodeld */; };
@@ -14,18 +16,17 @@
 		A25FF1392419910B0021DEA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A25FF1382419910B0021DEA0 /* Assets.xcassets */; };
 		A25FF13C2419910B0021DEA0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A25FF13B2419910B0021DEA0 /* Preview Assets.xcassets */; };
 		A25FF13F2419910B0021DEA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25FF13D2419910B0021DEA0 /* LaunchScreen.storyboard */; };
-		A25FF147241992470021DEA0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FF146241992470021DEA0 /* WelcomeView.swift */; };
 		A25FF14F2419928F0021DEA0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FF1482419928E0021DEA0 /* HomeView.swift */; };
 		A25FF1502419928F0021DEA0 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FF1492419928E0021DEA0 /* ToDoItem.swift */; };
 		A25FF1512419928F0021DEA0 /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FF14A2419928F0021DEA0 /* ToDoView.swift */; };
-		A25FF1522419928F0021DEA0 /* WaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FF14B2419928F0021DEA0 /* WaterView.swift */; };
 		A25FF1532419928F0021DEA0 /* ToDoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FF14C2419928F0021DEA0 /* ToDoItemView.swift */; };
 		A25FF1542419928F0021DEA0 /* TrackersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FF14D2419928F0021DEA0 /* TrackersView.swift */; };
 		A25FF1552419928F0021DEA0 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FF14E2419928F0021DEA0 /* SplashScreen.swift */; };
-		A25FF157241998A00021DEA0 /* HomeViewAdjustments.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FF156241998A00021DEA0 /* HomeViewAdjustments.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A24D7E9824199DBA001AB4ED /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		A24D7E9A24199DF8001AB4ED /* WaterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterView.swift; sourceTree = "<group>"; };
 		A25FF12C2419910A0021DEA0 /* Sage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25FF12F2419910A0021DEA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A25FF1312419910A0021DEA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,15 +36,12 @@
 		A25FF13B2419910B0021DEA0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A25FF13E2419910B0021DEA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A25FF1402419910B0021DEA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A25FF146241992470021DEA0 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeView.swift; path = ../../../Desktop/SAGEb/SAGEb/WelcomeView.swift; sourceTree = "<group>"; };
-		A25FF1482419928E0021DEA0 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = ../../../Desktop/SAGEb/SAGEb/HomeView.swift; sourceTree = "<group>"; };
-		A25FF1492419928E0021DEA0 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoItem.swift; path = ../../../Desktop/SAGEb/SAGEb/ToDoItem.swift; sourceTree = "<group>"; };
-		A25FF14A2419928F0021DEA0 /* ToDoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoView.swift; path = ../../../Desktop/SAGEb/SAGEb/ToDoView.swift; sourceTree = "<group>"; };
-		A25FF14B2419928F0021DEA0 /* WaterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaterView.swift; path = ../../../Desktop/SAGEb/SAGEb/WaterView.swift; sourceTree = "<group>"; };
-		A25FF14C2419928F0021DEA0 /* ToDoItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoItemView.swift; path = ../../../Desktop/SAGEb/SAGEb/ToDoItemView.swift; sourceTree = "<group>"; };
-		A25FF14D2419928F0021DEA0 /* TrackersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackersView.swift; path = ../../../Desktop/SAGEb/SAGEb/TrackersView.swift; sourceTree = "<group>"; };
-		A25FF14E2419928F0021DEA0 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashScreen.swift; path = ../../../Desktop/SAGEb/SAGEb/SplashScreen.swift; sourceTree = "<group>"; };
-		A25FF156241998A00021DEA0 /* HomeViewAdjustments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewAdjustments.swift; sourceTree = "<group>"; };
+		A25FF1482419928E0021DEA0 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A25FF1492419928E0021DEA0 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		A25FF14A2419928F0021DEA0 /* ToDoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
+		A25FF14C2419928F0021DEA0 /* ToDoItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItemView.swift; sourceTree = "<group>"; };
+		A25FF14D2419928F0021DEA0 /* TrackersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackersView.swift; sourceTree = "<group>"; };
+		A25FF14E2419928F0021DEA0 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,15 +77,14 @@
 				A25FF12F2419910A0021DEA0 /* AppDelegate.swift */,
 				A25FF1312419910A0021DEA0 /* SceneDelegate.swift */,
 				A25FF1362419910A0021DEA0 /* ContentView.swift */,
-				A25FF146241992470021DEA0 /* WelcomeView.swift */,
-				A25FF1482419928E0021DEA0 /* HomeView.swift */,
-				A25FF156241998A00021DEA0 /* HomeViewAdjustments.swift */,
 				A25FF14E2419928F0021DEA0 /* SplashScreen.swift */,
-				A25FF1492419928E0021DEA0 /* ToDoItem.swift */,
-				A25FF14C2419928F0021DEA0 /* ToDoItemView.swift */,
-				A25FF14A2419928F0021DEA0 /* ToDoView.swift */,
+				A24D7E9824199DBA001AB4ED /* WelcomeView.swift */,
+				A25FF1482419928E0021DEA0 /* HomeView.swift */,
 				A25FF14D2419928F0021DEA0 /* TrackersView.swift */,
-				A25FF14B2419928F0021DEA0 /* WaterView.swift */,
+				A24D7E9A24199DF8001AB4ED /* WaterView.swift */,
+				A25FF14A2419928F0021DEA0 /* ToDoView.swift */,
+				A25FF14C2419928F0021DEA0 /* ToDoItemView.swift */,
+				A25FF1492419928E0021DEA0 /* ToDoItem.swift */,
 				A25FF1382419910B0021DEA0 /* Assets.xcassets */,
 				A25FF13D2419910B0021DEA0 /* LaunchScreen.storyboard */,
 				A25FF1402419910B0021DEA0 /* Info.plist */,
@@ -176,15 +173,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A25FF157241998A00021DEA0 /* HomeViewAdjustments.swift in Sources */,
 				A25FF1552419928F0021DEA0 /* SplashScreen.swift in Sources */,
-				A25FF147241992470021DEA0 /* WelcomeView.swift in Sources */,
 				A25FF1352419910A0021DEA0 /* Sage.xcdatamodeld in Sources */,
 				A25FF1512419928F0021DEA0 /* ToDoView.swift in Sources */,
 				A25FF1502419928F0021DEA0 /* ToDoItem.swift in Sources */,
-				A25FF1522419928F0021DEA0 /* WaterView.swift in Sources */,
+				A24D7E9B24199DF8001AB4ED /* WaterView.swift in Sources */,
 				A25FF1302419910A0021DEA0 /* AppDelegate.swift in Sources */,
 				A25FF14F2419928F0021DEA0 /* HomeView.swift in Sources */,
+				A24D7E9924199DBA001AB4ED /* WelcomeView.swift in Sources */,
 				A25FF1542419928F0021DEA0 /* TrackersView.swift in Sources */,
 				A25FF1532419928F0021DEA0 /* ToDoItemView.swift in Sources */,
 				A25FF1372419910A0021DEA0 /* ContentView.swift in Sources */,
