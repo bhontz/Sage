@@ -1,4 +1,4 @@
-**Sage Team Working Project **
+** Sage Team Working Project **
 
 An illustrative Swift app for mentoring a 2020 Technovation Girls challenge team.
 
@@ -10,10 +10,10 @@ We'll also be using this repo to learn how use Git/Github!
 
 Summary of functionality through 2020-03-11
 
-..+ incorporated graphics provided to date
+  + incorporated graphics provided to date
 
-..+ working Quote of Day (from API) and user provided Goal of Day
+  + working Quote of Day (from API) and user provided Goal of Day
 
-..+ To-Do list functional and using Core Data database
+  + To-Do list functional and using Core Data database
 
 > Written with [StackEdit](https://stackedit.io/).
