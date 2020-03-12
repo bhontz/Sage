@@ -22,6 +22,10 @@
 		A25FF1532419928F0021DEA0 /* ToDoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FF14C2419928F0021DEA0 /* ToDoItemView.swift */; };
 		A25FF1542419928F0021DEA0 /* TrackersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FF14D2419928F0021DEA0 /* TrackersView.swift */; };
 		A25FF1552419928F0021DEA0 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FF14E2419928F0021DEA0 /* SplashScreen.swift */; };
+		A2674DFF241ABD05001536CB /* StudyScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2674DFE241ABD05001536CB /* StudyScheduleView.swift */; };
+		A2674E01241ACFC5001536CB /* StudySubjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2674E00241ACFC5001536CB /* StudySubjectDetailView.swift */; };
+		A2BA66A9241AD6BE00A17974 /* SubjectItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BA66A8241AD6BE00A17974 /* SubjectItem.swift */; };
+		A2BA66AB241AD9A600A17974 /* SubjectItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BA66AA241AD9A600A17974 /* SubjectItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		A25FF14C2419928F0021DEA0 /* ToDoItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItemView.swift; sourceTree = "<group>"; };
 		A25FF14D2419928F0021DEA0 /* TrackersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackersView.swift; sourceTree = "<group>"; };
 		A25FF14E2419928F0021DEA0 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		A2674DFE241ABD05001536CB /* StudyScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyScheduleView.swift; sourceTree = "<group>"; };
+		A2674E00241ACFC5001536CB /* StudySubjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySubjectDetailView.swift; sourceTree = "<group>"; };
+		A2BA66A8241AD6BE00A17974 /* SubjectItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectItem.swift; sourceTree = "<group>"; };
+		A2BA66AA241AD9A600A17974 /* SubjectItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +92,11 @@
 				A24D7E9A24199DF8001AB4ED /* WaterView.swift */,
 				A25FF14A2419928F0021DEA0 /* ToDoView.swift */,
 				A25FF14C2419928F0021DEA0 /* ToDoItemView.swift */,
+				A2674DFE241ABD05001536CB /* StudyScheduleView.swift */,
+				A2674E00241ACFC5001536CB /* StudySubjectDetailView.swift */,
+				A2BA66AA241AD9A600A17974 /* SubjectItemView.swift */,
 				A25FF1492419928E0021DEA0 /* ToDoItem.swift */,
+				A2BA66A8241AD6BE00A17974 /* SubjectItem.swift */,
 				A25FF1382419910B0021DEA0 /* Assets.xcassets */,
 				A25FF13D2419910B0021DEA0 /* LaunchScreen.storyboard */,
 				A25FF1402419910B0021DEA0 /* Info.plist */,
@@ -177,13 +189,17 @@
 				A25FF1352419910A0021DEA0 /* Sage.xcdatamodeld in Sources */,
 				A25FF1512419928F0021DEA0 /* ToDoView.swift in Sources */,
 				A25FF1502419928F0021DEA0 /* ToDoItem.swift in Sources */,
+				A2674E01241ACFC5001536CB /* StudySubjectDetailView.swift in Sources */,
 				A24D7E9B24199DF8001AB4ED /* WaterView.swift in Sources */,
 				A25FF1302419910A0021DEA0 /* AppDelegate.swift in Sources */,
 				A25FF14F2419928F0021DEA0 /* HomeView.swift in Sources */,
+				A2BA66A9241AD6BE00A17974 /* SubjectItem.swift in Sources */,
 				A24D7E9924199DBA001AB4ED /* WelcomeView.swift in Sources */,
+				A2BA66AB241AD9A600A17974 /* SubjectItemView.swift in Sources */,
 				A25FF1542419928F0021DEA0 /* TrackersView.swift in Sources */,
 				A25FF1532419928F0021DEA0 /* ToDoItemView.swift in Sources */,
 				A25FF1372419910A0021DEA0 /* ContentView.swift in Sources */,
+				A2674DFF241ABD05001536CB /* StudyScheduleView.swift in Sources */,
 				A25FF1322419910A0021DEA0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

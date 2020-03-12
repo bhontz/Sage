@@ -55,10 +55,20 @@ struct HomeView: View {
                             Spacer()
                     }
                     HStack {
-                        Image("Home Schedule Button")
-                            .resizable()
-                            .frame(width: 185, height: 80, alignment: .leading)
-                            .padding(.horizontal, 20.0)
+                        NavigationLink(destination: StudyScheduleView()
+                            .navigationBarTitle("")  // for some reason you need a title (ANY title) in order to hide the navigation bar
+                            .navigationBarHidden(true)
+                        ) {
+                            Image("Home Schedule Button")
+                                .renderingMode(.original)
+                                .resizable()
+                                .frame(width: 185, height: 80, alignment: .leading)
+                                .padding(.horizontal, 20.0)
+                        }
+//                        Image("Home Schedule Button")
+//                            .resizable()
+//                            .frame(width: 185, height: 80, alignment: .leading)
+//                            .padding(.horizontal, 20.0)
                         Spacer()
                         Image("Home Stress Relief Button")
                             .resizable()
