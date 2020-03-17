@@ -12,12 +12,12 @@ struct StudyScheduleView: View {
     @Environment(\.managedObjectContext) var managedObjectContext
     @FetchRequest(fetchRequest: SubjectItem.getAllSubjectItems()) var subjectItems: FetchedResults<SubjectItem>
     @State private var showModal = false
+    @State private var dur: Int16 = 0
     @State private var newSubjectItem = ""
     
     var body: some View {
         VStack {
-            Text("Subject View")
-                .font(.title)
+            Text("Subject View").font(.title)
             List {
                 Section(header: Text("Add Subject")) {
                     HStack {
@@ -40,12 +40,16 @@ struct StudyScheduleView: View {
                                 .imageScale(.large)
                         }
                     } // end HStack
-                }.font(.headline) // end first section
+                } .font(.headline)
                 
                 Section(header: Text("Subjects")) {
                     ForEach(self.subjectItems) { sub in
-                        SubjectItemView(subject: sub.subject!, daysOfWeek: sub.daysOfWeek!,
-                                        duration: sub.duration)
+                        SubjectItemView(subject: sub.subject!, daysOfWeek: sub.daysOfWeek!, duration: sub.duration)
+                            .onTapGesture {
+                                self.showModal.toggle()
+                        }.sheet(isPresented: self.$showModal) {
+                            StudySubjectDetailView(showDetail: self.$showModal)
+                        }
                     }.onDelete { indexSet in
                         let deleteItem = self.subjectItems[indexSet.first!]
                         self.managedObjectContext.delete(deleteItem)
@@ -55,11 +59,16 @@ struct StudyScheduleView: View {
                         } catch {
                             print(error)
                         }
-                    }.onTapGesture {
-                        self.showModal.toggle()
-                    }.sheet(isPresented: $showModal) {
-                        StudySubjectDetailView(showDetail: self.$showModal)
                     }
+//                    .onTapGesture {
+//                        let currentItem = self.subjectItems[indexSet.first!]
+//                        print(currentItem.subject)
+//                    }
+//                    }.onTapGesture {
+//                        self.showModal.toggle()
+//                    }.sheet(isPresented: $showModal) {
+//                        StudySubjectDetailView(showDetail: self.$showModal)
+//                    }
                 } // end second section
             } // end List section
 //            Button("Click here for detail") {
@@ -78,8 +87,8 @@ struct StudyScheduleView: View {
     }
 }
 
-struct StudyScheduleView_Previews: PreviewProvider {
-    static var previews: some View {
-        StudyScheduleView()
-    }
-}
+//struct StudyScheduleView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        StudyScheduleView()
+//    }
+//}

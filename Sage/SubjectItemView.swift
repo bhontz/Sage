@@ -11,23 +11,28 @@ import SwiftUI
 struct SubjectItemView: View {
     var subject:String = ""
     var daysOfWeek:String = ""
-    var duration:Int16 = 0
+    var duration: Int16
     
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
                 HStack {
                     Text(subject)
-                        .font(.headline)
                     Spacer()
                     Text("\(duration)")
                         .font(.headline)
                 }
-                Text(daysOfWeek)
-                .font(.caption)
-            }.padding(20)
+                Text("S M T W T F S")
+                    .overlay(provideOverlay())
+                    .font(.system(.caption, design: .monospaced))
+            }.padding(10)
         }
-    }}
+    }
+    func provideOverlay()-> Text {
+        return Text("  X     X   X").bold()
+    }
+}
+
 
 struct SubjectItemView_Previews: PreviewProvider {
     static var previews: some View {

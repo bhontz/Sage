@@ -14,44 +14,45 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 0.5) {
-                HStack {
-                    Text("Today I will ...")
-                    //.font(.title)
+                Text("Today I will ...")
                     .font(.custom("HelveticaNeue-Light", size: 32))
-                    .padding(.horizontal, 40.0)
-                    Spacer()
-                }
+                    .foregroundColor(Color.gray)
+                    .padding(.trailing, 140)
+                    .frame(width: 350, height: 40)
+                    .offset(y: -30)
                 Text(settings.goalOfTheDay)
-                    //.font(.title)
-                    .font(.custom("HelveticaNeue-Light", size: 24))
+                    .font(.custom("HelveticaNeue-UltraLight", size: 24))
                     .foregroundColor(Color.gray)
                     .multilineTextAlignment(.center)
-                    .lineLimit(nil)
-                    .padding(.horizontal, 30.0)
+                    .lineLimit(2)
+                    .padding(.horizontal, 50)
+                    .offset(y: -20)
                 Spacer()
                 HStack {
                     NavigationLink(destination: ToDoView()
                         .navigationBarTitle("")  // for some reason you need a title (ANY title) in order to hide the navigation bar
                         .navigationBarHidden(true)
                     ) {
-                        Image("Home To-Do Button")
-                            .renderingMode(.original)
-                            .resizable()
-                            .frame(width: 175, height: 70, alignment: .leading)
-                            .padding(.horizontal, 20.0)
+                    Image("Home To-Do Button")
+                        .renderingMode(.original)
+                        .resizable()
+                        .frame(width: 160, height: 55, alignment: .leading)  // was 176, 70
+                        .padding(.horizontal, 40.0)
+                        .offset(x: 10, y: -25)
                     }
                     Spacer()
                     Image("Home Plant 1")
                         .resizable()
-                        .frame(width: 200, height: 100, alignment: .leading)
-                }
+                        .frame(width: 250, height: 110, alignment: .leading)  // was 200, 100
+                        .offset(x: -50)
+                }  // end HStack
                 Spacer()
                 ZStack {
                     HStack {
                         Image("Home Plant 2")
                             .resizable()
-                            .frame(width: 300, height: 170, alignment: .leading)
-                            .padding(.horizontal, 20.0)
+                            .frame(width: 320, height: 225, alignment: .leading)
+                            .padding(.horizontal, 50.0)
                             Spacer()
                     }
                     HStack {
@@ -63,58 +64,57 @@ struct HomeView: View {
                                 .renderingMode(.original)
                                 .resizable()
                                 .frame(width: 185, height: 80, alignment: .leading)
-                                .padding(.horizontal, 20.0)
+                                .padding(.horizontal, 40.0)
+                                .offset(x: 10, y: 30)
                         }
-//                        Image("Home Schedule Button")
-//                            .resizable()
-//                            .frame(width: 185, height: 80, alignment: .leading)
-//                            .padding(.horizontal, 20.0)
                         Spacer()
                         Image("Home Stress Relief Button")
                             .resizable()
                             .frame(width: 200, height: 100, alignment: .leading)
-                    }
-                }
+                            .offset(x: -60, y: -70)
+                    } // end HStack
+                }  // end ZStack
                 Spacer()
                 HStack {
                     // I think you'll need a ZStack here to align like your "plan"
                     Image("Home Plant 3")
                         .resizable()
                         .frame(width: 185, height: 120, alignment: .leading)
-                        .padding(.horizontal, 20.0)
+                        .offset(x: 60, y: -10)
                     Spacer()
                     NavigationLink(destination: TrackersView()
                         .navigationBarTitle("")  // for some reason you need a title (ANY title) in order to hide the navigation bar
                         .navigationBarHidden(true)
                     ) {
-                        Image("Home Trackers Button")
-                            .renderingMode(.original)
-                            .resizable()
-                            .frame(width: 189, height: 100, alignment: .leading)
-                            .padding(.horizontal, 20.0)
+                    Image("Home Trackers Button")
+                        .renderingMode(.original)
+                        .resizable()
+                        .frame(width: 210, height: 80, alignment: .leading)
+                        .offset(x: -50)
                     }
-                }
+                } // end HStack
                 Spacer()
                 HStack {
                     VStack {
                         Image("Home Snack Button")
                             .resizable()
                             .frame(width: 175, height: 70, alignment: .leading)
-                            .padding(.horizontal, 20.0)
+                            .offset(x: 60)
                         
                         NavigationLink(destination: WelcomeView(goalOfTheDay: $settings.goalOfTheDay)
                             .navigationBarTitle("")  // for some reason you need a title (ANY title) in order to hide the navigation bar
                             .navigationBarHidden(true)
                         ) {
-                            Image("Back Button").renderingMode(.original).resizable().padding([.leading, .bottom]).frame(width: 100, height: 57, alignment: .center)
+                        Image("Back Button").renderingMode(.original).resizable().padding([.leading, .bottom]).frame(width: 100, height: 57, alignment: .center)
                         }
-                    }
+                    } // end VStack
                     Spacer()
                     Image("Home Plant 4")
                         .resizable()
-                        .frame(width: 200, height: 100, alignment: .leading)
-                }
-            } // end VStack
+                        .frame(width: 220, height: 100, alignment: .leading)
+                        .offset(x: -50, y: -10)
+                } // end HStack
+            } // end Overall VStack
         }  // end NavigationView
     }
     

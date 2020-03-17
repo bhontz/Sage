@@ -14,7 +14,7 @@ struct StudySubjectDetailView: View {
     
     var body: some View {
         VStack {
-            Text("This is the detailed view")
+            Text("Subject goes here").font(.title)
             Spacer()
             studyTimeStepper()
             Spacer()
@@ -31,13 +31,13 @@ struct StudySubjectDetailView: View {
                 self.timeIncrement -= 30
             }
         }) {
-            Text("Increment Study Time: \(timeIncrement)")
+            Text("Increment Study Time: \(self.timeIncrement)")
         }.padding()
     }
 }
 
-struct StudySubjectDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        StudySubjectDetailView(showDetail: .constant(true))
-    }
-}
+//struct StudySubjectDetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        StudySubjectDetailView(showDetail: .constant(true))
+//    }
+//}
