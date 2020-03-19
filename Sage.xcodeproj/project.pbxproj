@@ -24,6 +24,7 @@
 		A25FF1552419928F0021DEA0 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FF14E2419928F0021DEA0 /* SplashScreen.swift */; };
 		A2674DFF241ABD05001536CB /* StudyScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2674DFE241ABD05001536CB /* StudyScheduleView.swift */; };
 		A2674E01241ACFC5001536CB /* StudySubjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2674E00241ACFC5001536CB /* StudySubjectDetailView.swift */; };
+		A2B8904C2424164F006DD0AA /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B8904B2424164F006DD0AA /* UIColor+Hex.swift */; };
 		A2BA66A9241AD6BE00A17974 /* SubjectItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BA66A8241AD6BE00A17974 /* SubjectItem.swift */; };
 		A2BA66AB241AD9A600A17974 /* SubjectItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BA66AA241AD9A600A17974 /* SubjectItemView.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		A25FF14E2419928F0021DEA0 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		A2674DFE241ABD05001536CB /* StudyScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyScheduleView.swift; sourceTree = "<group>"; };
 		A2674E00241ACFC5001536CB /* StudySubjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySubjectDetailView.swift; sourceTree = "<group>"; };
+		A2B8904B2424164F006DD0AA /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		A2BA66A8241AD6BE00A17974 /* SubjectItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectItem.swift; sourceTree = "<group>"; };
 		A2BA66AA241AD9A600A17974 /* SubjectItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +98,7 @@
 				A2674E00241ACFC5001536CB /* StudySubjectDetailView.swift */,
 				A2BA66AA241AD9A600A17974 /* SubjectItemView.swift */,
 				A25FF1492419928E0021DEA0 /* ToDoItem.swift */,
+				A2B8904B2424164F006DD0AA /* UIColor+Hex.swift */,
 				A2BA66A8241AD6BE00A17974 /* SubjectItem.swift */,
 				A25FF1382419910B0021DEA0 /* Assets.xcassets */,
 				A25FF13D2419910B0021DEA0 /* LaunchScreen.storyboard */,
@@ -189,6 +192,7 @@
 				A25FF1352419910A0021DEA0 /* Sage.xcdatamodeld in Sources */,
 				A25FF1512419928F0021DEA0 /* ToDoView.swift in Sources */,
 				A25FF1502419928F0021DEA0 /* ToDoItem.swift in Sources */,
+				A2B8904C2424164F006DD0AA /* UIColor+Hex.swift in Sources */,
 				A2674E01241ACFC5001536CB /* StudySubjectDetailView.swift in Sources */,
 				A24D7E9B24199DF8001AB4ED /* WaterView.swift in Sources */,
 				A25FF1302419910A0021DEA0 /* AppDelegate.swift in Sources */,

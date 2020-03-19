@@ -13,6 +13,7 @@ public class SubjectItem:NSManagedObject, Identifiable {
     @NSManaged public var subject:String
     @NSManaged public var daysOfWeek:String
     @NSManaged public var duration: Int16
+    @NSManaged public var hexColor: Int32
 }
 
 extension SubjectItem {

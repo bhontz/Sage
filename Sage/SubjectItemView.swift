@@ -12,6 +12,7 @@ struct SubjectItemView: View {
     var subject: String = ""
     var daysOfWeek: String = ""
     var duration: Int16
+    var hexColor: Int32
     
     var body: some View {
         HStack {
@@ -27,6 +28,7 @@ struct SubjectItemView: View {
                     .font(.system(.caption, design: .monospaced))  // monospace retains alignment
             }.padding(10)
         }
+        .background(Color(UIColor(rgb: Int(self.hexColor))))
     }
 
     // here we format the duration in minutes to a HH MM readable format
@@ -50,6 +52,6 @@ struct SubjectItemView: View {
 
 struct SubjectItemView_Previews: PreviewProvider {
     static var previews: some View {
-        SubjectItemView(subject:"Computer Science", daysOfWeek:"S M T W T F S", duration: 190)
+        SubjectItemView(subject:"Computer Science", daysOfWeek:"S M T W T F S", duration: 190, hexColor: 0x696969)
     }
 }

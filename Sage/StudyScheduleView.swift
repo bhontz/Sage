@@ -5,6 +5,11 @@
 //  Created by brad.hontz on 3/12/20.
 //  Copyright © 2020 brad.hontz. All rights reserved.
 //
+// fillColors list comes from: https://htmlcolorcodes.com
+//
+
+var fillColors: [Int32] = [0xC0C0C0, 0x808080, 0xFF0000, 0x800000, 0xFFFF00, 0x00FF00, 0x00FFFF, 0xFF00FF, 0x800080, 0x0000FF]
+var itemCounter: Int = 0  // keeps track of where we're at in this array
 
 import SwiftUI
 
@@ -26,6 +31,9 @@ struct StudyScheduleView: View {
                             subjectItem.subject = self.newSubjectItem
                             subjectItem.daysOfWeek = "S M T W T F S"
                             subjectItem.duration = 0
+                            subjectItem.hexColor = fillColors[itemCounter]
+                            itemCounter = itemCounter > 9 ? 0 : itemCounter + 1 // colors wrap around
+                            
                             do {
                                 try self.managedObjectContext.save()
                             } catch {
@@ -44,7 +52,7 @@ struct StudyScheduleView: View {
                 Section(header: Text("Subjects")) {
                     ForEach(self.subjectItems) { sub in
                         NavigationLink(destination: StudySubjectDetailView(subItem: sub)) {
-                           SubjectItemView(subject: sub.subject, daysOfWeek: sub.daysOfWeek, duration: sub.duration)
+                            SubjectItemView(subject: sub.subject, daysOfWeek: sub.daysOfWeek, duration: sub.duration, hexColor: sub.hexColor)
                         }
                     }
                     .onDelete { indexSet in

@@ -8,15 +8,93 @@
 
 import SwiftUI
 
+
 struct StudySubjectDetailView: View {
     @ObservedObject var subItem: SubjectItem
     private let strikeChar: String = "X" // this is the character we use for DayOfWeek strikeout
-    private let timeIncrement: Int16 = 10  // bump study time in 10m increments
+    private let timeIncrement: Int16 = 10  // increment amount for study time
     
     var body: some View {
         VStack {
             Text(subItem.subject)
+                .font(.title)
+                .foregroundColor(Color(UIColor(rgb: Int(self.subItem.hexColor))))
             Spacer()
+            Text("Select \(subItem.subject)'s color:")
+            HStack(spacing: 10.0) {
+                Button(action: {
+                    self.subItem.hexColor = fillColors[0]  // see StudyScheduleView
+                }){
+                    Rectangle()
+                        .fill(Color(UIColor(rgb: Int(fillColors[0]))))
+                        .frame(width: 20, height: 20)
+                }
+                Button(action: {
+                    self.subItem.hexColor = fillColors[1]
+                }){
+                    Rectangle()
+                        .fill(Color(UIColor(rgb: Int(fillColors[1]))))
+                        .frame(width: 20, height: 20)
+                }
+                Button(action: {
+                    self.subItem.hexColor = fillColors[2]
+                }){
+                    Rectangle()
+                        .fill(Color(UIColor(rgb: Int(fillColors[2]))))
+                        .frame(width: 20, height: 20)
+                }
+                Button(action: {
+                    self.subItem.hexColor = fillColors[3]
+                }){
+                    Rectangle()
+                        .fill(Color(UIColor(rgb: Int(fillColors[3]))))
+                        .frame(width: 20, height: 20)
+                }
+                Button(action: {
+                    self.subItem.hexColor = fillColors[4]
+                }){
+                    Rectangle()
+                        .fill(Color(UIColor(rgb: Int(fillColors[4]))))
+                        .frame(width: 20, height: 20)
+                }
+                Button(action: {
+                    self.subItem.hexColor = fillColors[5]
+                }){
+                    Rectangle()
+                        .fill(Color(UIColor(rgb: Int(fillColors[5]))))
+                        .frame(width: 20, height: 20)
+                }
+                Button(action: {
+                    self.subItem.hexColor = fillColors[6]
+                }){
+                    Rectangle()
+                        .fill(Color(UIColor(rgb: Int(fillColors[6]))))
+                        .frame(width: 20, height: 20)
+                }
+                Button(action: {
+                    self.subItem.hexColor = fillColors[7]
+                }){
+                    Rectangle()
+                        .fill(Color(UIColor(rgb: Int(fillColors[7]))))
+                        .frame(width: 20, height: 20)
+                }
+                Button(action: {
+                    self.subItem.hexColor = fillColors[8]
+                }){
+                    Rectangle()
+                        .fill(Color(UIColor(rgb: Int(fillColors[8]))))
+                        .frame(width: 20, height: 20)
+                }
+                Button(action: {
+                    self.subItem.hexColor = fillColors[9]
+                }){
+                    Rectangle()
+                        .fill(Color(UIColor(rgb: Int(fillColors[9]))))
+                        .frame(width: 20, height: 20)
+                }
+            }
+            Spacer()
+            Text("Select days of the week to study \(subItem.subject):")
             HStack(spacing: 25.0) {
                 Button(action: {
                     self.strikeDayOfWeek(idx: 0)
@@ -68,7 +146,7 @@ struct StudySubjectDetailView: View {
                 self.subItem.duration -= self.timeIncrement
             }
         }) {
-            Text("Increment Study Time: \(self.subItem.duration)")
+            Text("Daily minutes to study \(self.subItem.subject): \(self.subItem.duration)")
         }.padding()
     }
     
