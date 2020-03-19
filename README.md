@@ -8,14 +8,16 @@ We'll also be using this repo to learn how use Git/Github!
 
 **Version History**
 
-Summary of functionality through 2020-03-12
+Summary of functionality through 2020-03-19
+
+    + completed (unformatted) study scheduler detail views
     
-    + beginnings of a study scheduler
+    + finalization of home view look
     
-    + incorporated graphics provided to date
-    
+    + (near) completion of the water tracker
+
     + working Quote of Day (from API) and user provided Goal of Day
     
-    + To-Do list functional and using Core Data database
+    + To-Do list functional using Core Data database
 
 > Written with [StackEdit](https://stackedit.io/).

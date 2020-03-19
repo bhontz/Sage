@@ -12,12 +12,11 @@ struct StudyScheduleView: View {
     @Environment(\.managedObjectContext) var managedObjectContext
     @FetchRequest(fetchRequest: SubjectItem.getAllSubjectItems()) var subjectItems: FetchedResults<SubjectItem>
     @State private var showModal = false
-    @State private var dur: Int16 = 0
     @State private var newSubjectItem = ""
     
     var body: some View {
         VStack {
-            Text("Subject View").font(.title)
+            Text("Subject View")
             List {
                 Section(header: Text("Add Subject")) {
                     HStack {
@@ -40,17 +39,15 @@ struct StudyScheduleView: View {
                                 .imageScale(.large)
                         }
                     } // end HStack
-                } .font(.headline)
+                }
                 
                 Section(header: Text("Subjects")) {
                     ForEach(self.subjectItems) { sub in
-                        SubjectItemView(subject: sub.subject!, daysOfWeek: sub.daysOfWeek!, duration: sub.duration)
-                            .onTapGesture {
-                                self.showModal.toggle()
-                        }.sheet(isPresented: self.$showModal) {
-                            StudySubjectDetailView(showDetail: self.$showModal)
+                        NavigationLink(destination: StudySubjectDetailView(subItem: sub)) {
+                           SubjectItemView(subject: sub.subject, daysOfWeek: sub.daysOfWeek, duration: sub.duration)
                         }
-                    }.onDelete { indexSet in
+                    }
+                    .onDelete { indexSet in
                         let deleteItem = self.subjectItems[indexSet.first!]
                         self.managedObjectContext.delete(deleteItem)
 
@@ -60,22 +57,8 @@ struct StudyScheduleView: View {
                             print(error)
                         }
                     }
-//                    .onTapGesture {
-//                        let currentItem = self.subjectItems[indexSet.first!]
-//                        print(currentItem.subject)
-//                    }
-//                    }.onTapGesture {
-//                        self.showModal.toggle()
-//                    }.sheet(isPresented: $showModal) {
-//                        StudySubjectDetailView(showDetail: self.$showModal)
-//                    }
                 } // end second section
             } // end List section
-//            Button("Click here for detail") {
-//                self.showModal.toggle()
-//            }.sheet(isPresented: $showModal) {
-//                StudySubjectDetailView(showDetail: self.$showModal)
-//            }
             Spacer()
             NavigationLink(destination: HomeView()
                 .navigationBarTitle("")  // for some reason you need a title (ANY title) in order to hide the navigation bar

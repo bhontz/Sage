@@ -9,8 +9,8 @@
 import SwiftUI
 
 struct SubjectItemView: View {
-    var subject:String = ""
-    var daysOfWeek:String = ""
+    var subject: String = ""
+    var daysOfWeek: String = ""
     var duration: Int16
     
     var body: some View {
@@ -19,23 +19,37 @@ struct SubjectItemView: View {
                 HStack {
                     Text(subject)
                     Spacer()
-                    Text("\(duration)")
+                    durationHHMMDisplay()
                         .font(.headline)
                 }
-                Text("S M T W T F S")
-                    .overlay(provideOverlay())
-                    .font(.system(.caption, design: .monospaced))
+                Text("S M T W T F S")  // here we "overlay" the user's strikeouts over this pattern
+                    .overlay(Text(self.daysOfWeek).bold())
+                    .font(.system(.caption, design: .monospaced))  // monospace retains alignment
             }.padding(10)
         }
     }
-    func provideOverlay()-> Text {
-        return Text("  X     X   X").bold()
+
+    // here we format the duration in minutes to a HH MM readable format
+    func durationHHMMDisplay()-> Text {
+        var returnText: String = ""
+        
+        let min = self.duration % 60
+        let hr = self.duration / 60
+
+        if self.duration > 0 && min == 0 {
+            returnText = "\(hr)hr"
+        } else if hr == 0 {
+            returnText = "\(min)m"
+        } else {
+            returnText = "\(hr)hr \(min)m"
+        }
+        
+        return Text(returnText)
     }
 }
 
-
 struct SubjectItemView_Previews: PreviewProvider {
     static var previews: some View {
-        SubjectItemView(subject:"gym", daysOfWeek:"S M T W T F S", duration:30)
+        SubjectItemView(subject:"Computer Science", daysOfWeek:"S M T W T F S", duration: 190)
     }
 }

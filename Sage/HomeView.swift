@@ -76,7 +76,6 @@ struct HomeView: View {
                 }  // end ZStack
                 Spacer()
                 HStack {
-                    // I think you'll need a ZStack here to align like your "plan"
                     Image("Home Plant 3")
                         .resizable()
                         .frame(width: 185, height: 120, alignment: .leading)

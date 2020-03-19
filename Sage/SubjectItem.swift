@@ -10,8 +10,8 @@ import Foundation
 import CoreData
 
 public class SubjectItem:NSManagedObject, Identifiable {
-    @NSManaged public var subject:String?
-    @NSManaged public var daysOfWeek:String?
+    @NSManaged public var subject:String
+    @NSManaged public var daysOfWeek:String
     @NSManaged public var duration: Int16
 }
 
