@@ -56,7 +56,7 @@ struct HomeView: View {
                             Spacer()
                     }
                     HStack {
-                        NavigationLink(destination: StudyScheduleView()
+                        NavigationLink(destination: DailyScheduleView() // StudyScheduleView()
                             .navigationBarTitle("")  // for some reason you need a title (ANY title) in order to hide the navigation bar
                             .navigationBarHidden(true)
                         ) {

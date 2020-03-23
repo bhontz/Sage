@@ -8,7 +8,9 @@ We'll also be using this repo to learn how use Git/Github!
 
 **Version History**
 
-Summary of functionality through 2020-03-19
+Summary of functionality through 2020-03-23
+
+    + started on a daily study schedule concept - dragging cards of subjects into the prefer order of study for that day in order to make the day's study schedule
 
     + completed (unformatted) study scheduler detail views
     

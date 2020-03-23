@@ -68,11 +68,11 @@ struct StudyScheduleView: View {
                 } // end second section
             } // end List section
             Spacer()
-            NavigationLink(destination: HomeView()
+            NavigationLink(destination: DailyScheduleView()
                 .navigationBarTitle("")  // for some reason you need a title (ANY title) in order to hide the navigation bar
                 .navigationBarHidden(true)
             ) {
-                Text("Back Home")
+                Text("Study Scheduler")
             }
         } // end VStack
     }

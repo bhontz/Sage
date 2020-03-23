@@ -27,6 +27,8 @@
 		A2B8904C2424164F006DD0AA /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B8904B2424164F006DD0AA /* UIColor+Hex.swift */; };
 		A2BA66A9241AD6BE00A17974 /* SubjectItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BA66A8241AD6BE00A17974 /* SubjectItem.swift */; };
 		A2BA66AB241AD9A600A17974 /* SubjectItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BA66AA241AD9A600A17974 /* SubjectItemView.swift */; };
+		A2CAAF8324245B6A009855EC /* DailyScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CAAF8224245B6A009855EC /* DailyScheduleView.swift */; };
+		A2CAAF8524245C23009855EC /* ScheduleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CAAF8424245C23009855EC /* ScheduleCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		A2B8904B2424164F006DD0AA /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		A2BA66A8241AD6BE00A17974 /* SubjectItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectItem.swift; sourceTree = "<group>"; };
 		A2BA66AA241AD9A600A17974 /* SubjectItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectItemView.swift; sourceTree = "<group>"; };
+		A2CAAF8224245B6A009855EC /* DailyScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScheduleView.swift; sourceTree = "<group>"; };
+		A2CAAF8424245C23009855EC /* ScheduleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +98,12 @@
 				A24D7E9A24199DF8001AB4ED /* WaterView.swift */,
 				A25FF14A2419928F0021DEA0 /* ToDoView.swift */,
 				A25FF14C2419928F0021DEA0 /* ToDoItemView.swift */,
+				A25FF1492419928E0021DEA0 /* ToDoItem.swift */,
+				A2CAAF8224245B6A009855EC /* DailyScheduleView.swift */,
+				A2CAAF8424245C23009855EC /* ScheduleCardView.swift */,
 				A2674DFE241ABD05001536CB /* StudyScheduleView.swift */,
 				A2674E00241ACFC5001536CB /* StudySubjectDetailView.swift */,
 				A2BA66AA241AD9A600A17974 /* SubjectItemView.swift */,
-				A25FF1492419928E0021DEA0 /* ToDoItem.swift */,
 				A2B8904B2424164F006DD0AA /* UIColor+Hex.swift */,
 				A2BA66A8241AD6BE00A17974 /* SubjectItem.swift */,
 				A25FF1382419910B0021DEA0 /* Assets.xcassets */,
@@ -193,12 +199,14 @@
 				A25FF1512419928F0021DEA0 /* ToDoView.swift in Sources */,
 				A25FF1502419928F0021DEA0 /* ToDoItem.swift in Sources */,
 				A2B8904C2424164F006DD0AA /* UIColor+Hex.swift in Sources */,
+				A2CAAF8524245C23009855EC /* ScheduleCardView.swift in Sources */,
 				A2674E01241ACFC5001536CB /* StudySubjectDetailView.swift in Sources */,
 				A24D7E9B24199DF8001AB4ED /* WaterView.swift in Sources */,
 				A25FF1302419910A0021DEA0 /* AppDelegate.swift in Sources */,
 				A25FF14F2419928F0021DEA0 /* HomeView.swift in Sources */,
 				A2BA66A9241AD6BE00A17974 /* SubjectItem.swift in Sources */,
 				A24D7E9924199DBA001AB4ED /* WelcomeView.swift in Sources */,
+				A2CAAF8324245B6A009855EC /* DailyScheduleView.swift in Sources */,
 				A2BA66AB241AD9A600A17974 /* SubjectItemView.swift in Sources */,
 				A25FF1542419928F0021DEA0 /* TrackersView.swift in Sources */,
 				A25FF1532419928F0021DEA0 /* ToDoItemView.swift in Sources */,

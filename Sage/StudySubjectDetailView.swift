@@ -135,7 +135,13 @@ struct StudySubjectDetailView: View {
             }
             Spacer()
             studyTimeStepper()
-            Spacer()
+            NavigationLink(destination: StudyScheduleView()
+                .navigationBarTitle("")  // for some reason you need a title (ANY title) in order to hide the navigation bar
+                .navigationBarHidden(true)
+            ) {
+                Text("Return")
+            }
+            
         }
     }
     func studyTimeStepper() -> some View {
