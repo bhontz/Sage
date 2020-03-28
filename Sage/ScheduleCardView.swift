@@ -22,7 +22,7 @@ struct Card: Hashable {
 }
 
 struct ScheduleCardView: View {
-    let card: Card
+    var card: Card
     @State private var isShowingAnswer = false
     @State private var viewState = CGSize.zero
     
